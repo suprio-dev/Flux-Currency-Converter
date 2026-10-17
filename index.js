@@ -43,15 +43,16 @@ function displayAmount(convertedAmount) {
   toAmount.textContent = `${convertedAmount}`;
 }
 
-// swapBtn.addEventListener('click', (e) => {
-//   moneyInput = convertedAmount;
-//   let t = fromCurrencyInput;
-//   fromCurrencyInput = toCurrencyInput;
-//   toCurrencyInput = t;
-//   convertCurrency(moneyInput, fromCurrencyInput, toCurrencyInput);
-//   fromName(fromCurrencyInput);
-//   toName(toCurrencyInput);
-// })
+swapBtn.addEventListener('click', (e) => {
+  let t = fromCurrencyInput;
+  fromCurrencyInput = toCurrencyInput;
+  toCurrencyInput = t;
+  fromCurrency.value = fromCurrencyInput;
+  toCurrency.value = toCurrencyInput;
+  convertCurrency(moneyInput, fromCurrencyInput, toCurrencyInput);
+  fromName(fromCurrencyInput);
+  toName(toCurrencyInput);
+})
 
 
 
