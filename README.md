@@ -2,7 +2,7 @@
 
 ### A currency converter built with JavaScript.
 
-A clean, responsive currency converter built with HTML, Tailwind CSS, and JavaScript, powered by the Frankfurter API. Convert amounts between supported currencies, retrieve exchange rates dynamically, and view the reference date for the returned rate.
+A clean, responsive currency converter built with HTML, Tailwind CSS, and JavaScript, powered by the Frankfurter API. Convert amounts between supported currencies, retrieve exchange rates dynamically, swap currencies instantly, and view the reference date for the returned rate.
 
 **Live Demo:** [Flux Currency Converter](https://suprio-dev.github.io/Flux-Currency-Converter/)
 
@@ -12,6 +12,8 @@ A clean, responsive currency converter built with HTML, Tailwind CSS, and JavaSc
 
 - Convert amounts between supported currencies
 - Select source and target currencies
+- **Swap source and target currencies instantly**
+- Automatically recalculate the conversion after swapping currencies
 - Fetch exchange rates dynamically using the Frankfurter API
 - Calculate converted amounts using JavaScript
 - Display the exchange rate for the selected currency pair
@@ -30,7 +32,7 @@ A clean, responsive currency converter built with HTML, Tailwind CSS, and JavaSc
 |---|---|
 | HTML5 | Page structure |
 | Tailwind CSS | Styling and responsive UI |
-| JavaScript | Conversion logic and DOM manipulation |
+| JavaScript | Conversion logic, currency swapping, and DOM manipulation |
 | Frankfurter API | Exchange rate data |
 | Fetch API | Asynchronous API requests |
 | DOM API | Updating conversion results and currency information |
@@ -62,6 +64,8 @@ Display Result and Rate Date
 Flux uses the selected currencies and entered amount to request the corresponding exchange rate from the Frankfurter API.
 
 JavaScript processes the API response, calculates the converted amount, and updates the result, exchange rate, and reference date in the interface.
+
+The swap feature allows users to reverse the selected source and target currencies with a single click. The conversion is then recalculated using the reversed currency pair.
 
 ---
 
@@ -113,6 +117,7 @@ This project was built to practice working with:
 - Working with JSON data
 - REST API integration
 - Dynamic calculations using API responses
+- Currency swapping and updating selected currencies
 - Updating DOM elements with JavaScript
 - Displaying exchange rates and dates
 - Responsive UI development with Tailwind CSS
@@ -138,7 +143,6 @@ No API key is required for the Frankfurter API.
 
 **In Progress — v1.0**
 
-Built as a hands-on project to strengthen my JavaScript fundamentals and explore REST API integration, asynchronous programming, dynamic calculations, and responsive UI development.
+Built as a hands-on project to strengthen my JavaScript fundamentals and explore REST API integration, asynchronous programming, dynamic calculations, currency swapping, and responsive UI development.
 
 More features and improvements may be added in future versions.
-
